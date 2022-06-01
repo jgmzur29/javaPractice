@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Figuras geometricas </title>
+</head>
+<body>
+    <header>
+        <h1>
+        Calculadora para figuras geometricas
+    </h1>
+</header>
+<section>
+    <h2>
+        Calculadora de area y perimetro del cuadrado
+    </h2>
+    <form class="Triangulo">
+        <label for="inputCuadrado">
+            Escribe cuanto mide el lado del cuadrado ( en cm):
+        </label>
+        <input id="inputCuadrado" type="number" />
+        <button type="button" onclick="calcularPerimetroCuadrado()">
+            Perimetro
+        </button>
+        <button type="button" onclick="calcularAreaCuadrado()">
+            Area
+        </button>
+    </form>
+    <h2> 
+        Calculadora de area y perimetro del circulo
+    </h2>
+    <form class="Circulo">
+        <label for="inputCirculo">
+            Escribe cuanto mide el radio del circulo ( en cm):
+        </label>
+        <input id="inputCirculo" type="number" />
+        <button type="button" onclick="calcularDiametroCirculo()">
+            Diametro
+        </button>
+        <button type="button" onclick="calcularPerimetroCirculo()">
+            Perimetro
+        </button>
+        <button type="button" onclick="calcularAreaCirculo()">
+            Area
+        </button>
+    </form>
+    <h2>  
+        Calculadora de area y perimetro del Triangulo
+    </h2>
+    <form class="Triangulo">
+        <p><label for="inputLado1">
+            Lado A
+        </label>
+        <input id="inputLado1" type="number" />
+        </p>
+        <p> <label for="inputLado2">
+            Lado B
+        </label>
+        <input id="inputLado2" type="number" />
+        </p>
+        <p> <label for="inputBase">
+            Base
+        </label>
+        <input id="inputBase" type="number" />
+        </p>
+        <p>
+            <label for="inputAltura">
+            Altura
+            </label>
+            <input id="inputAltura" type="number" />
+        </p>
+        <button type="button" onclick="calcularPerimetroTriangulo()">
+            Perimetro
+        </button>
+        <button type="button" onclick="calcularAreaTriangulo()">
+            Area
+        </button>
+    </form>
+    <h2>  
+        Calculadora de area y perimetro del Triangulo Isoceles
+    </h2>
+    <form class="TrianguloIsoceles">
+        <p><label for="inputLado1Isoceles">
+            Lado A
+        </label>
+        <input id="inputLado1Isoceles" type="number" />
+        </p>
+        <p> <label for="inputBaseIsoceles">
+            Base
+        </label>
+        <input id="inputBaseIsoceles" type="number" />
+        </p>
+        <button type="button" onclick="calcularPerimetroTrianguloIsoceles()">
+            Perimetro
+        </button>
+        <button type="button" onclick="calcularAreaTrianguloIsoceles()">
+            Area
+        </button>
+        <button type="button" onclick="calcularAlturaTrianguloIsoceles()">
+            Altura
+        </button>
+    </form>
+</section>
+    <script src="./figuras.js"> </script>
+</body>
+</html>
